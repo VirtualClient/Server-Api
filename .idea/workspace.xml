@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Idk">
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Removed dependencies">
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestorm-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/VirtualServerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/indicators/icon/ItemIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/indicators/icon/ItemIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/resources/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/resources/extensions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineStormApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineVirtualPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualApiExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/VirtualApiExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/indicator/IndicatorTransmitterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/indicator/IndicatorTransmitterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/transmitter/PacketTransmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/transmitter/PacketTransmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/resources/extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/resources/extension.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +90,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm",
-    "last_opened_file_path": "F:/Projects/VirtualClient/Server-Api/api",
+    "last_opened_file_path": "F:/Projects/VirtualClient/Server-Api/implementation/spigot",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -89,6 +100,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\VirtualClient\Server-Api\implementation\spigot" />
       <recent name="F:\Projects\VirtualClient\Server-Api\api" />
       <recent name="F:\Projects\VirtualClient\Server-Api\common-adventure" />
       <recent name="F:\Projects\VirtualClient\Server-Api\minestorm" />
@@ -179,7 +191,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663522811096</updated>
       <workItem from="1663522814853" duration="5408000" />
-      <workItem from="1663533511582" duration="13465000" />
+      <workItem from="1663533511582" duration="14515000" />
     </task>
     <task id="LOCAL-00001" summary="I have no idea what I'm doing">
       <created>1663592332796</created>
@@ -202,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663603161799</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed dependencies">
+      <created>1663603300580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663603300580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +243,8 @@
     <MESSAGE value="I have no idea what I'm doing" />
     <MESSAGE value="Made Minestorm work" />
     <MESSAGE value="Idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Idk" />
+    <MESSAGE value="Removed dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

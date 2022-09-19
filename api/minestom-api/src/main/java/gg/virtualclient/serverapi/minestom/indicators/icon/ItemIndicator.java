@@ -1,4 +1,4 @@
-package gg.virtualclient.serverapi.minestorm.indicators.icon;
+package gg.virtualclient.serverapi.minestom.indicators.icon;
 
 import com.google.gson.JsonObject;
 import gg.virtualclient.serverapi.indicators.icon.InfoIcon;

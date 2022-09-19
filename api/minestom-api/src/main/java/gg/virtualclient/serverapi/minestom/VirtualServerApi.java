@@ -1,4 +1,4 @@
-package gg.virtualclient.serverapi.minestorm;
+package gg.virtualclient.serverapi.minestom;
 
 import gg.virtualclient.serverapi.AbstractServerApi;
 import gg.virtualclient.serverapi.VirtualPlayer;

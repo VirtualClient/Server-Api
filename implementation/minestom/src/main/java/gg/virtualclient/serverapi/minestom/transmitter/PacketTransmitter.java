@@ -1,4 +1,4 @@
-package gg.virtualclient.serverapi.minestorm.transmitter;
+package gg.virtualclient.serverapi.minestom.transmitter;
 
 import gg.virtualclient.serverapi.packet.ClientPacket;
 import net.minestom.server.MinecraftServer;

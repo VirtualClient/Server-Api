@@ -1,10 +1,10 @@
-package gg.virtualclient.serverapi.minestorm.indicator;
+package gg.virtualclient.serverapi.minestom.indicator;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.indicators.InfoIndicator;
-import gg.virtualclient.serverapi.minestorm.transmitter.PacketTransmitter;
+import gg.virtualclient.serverapi.minestom.transmitter.PacketTransmitter;
 import gg.virtualclient.serverapi.packet.ClientPacket;
 import net.minestom.server.entity.Player;
 

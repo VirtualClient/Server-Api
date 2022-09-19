@@ -1,4 +1,4 @@
-package gg.virtualclient.serverapi.minestorm;
+package gg.virtualclient.serverapi.minestom;
 
 import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.indicators.InfoIndicator;
@@ -18,7 +18,7 @@ public class MineVirtualPlayer implements VirtualPlayer {
 
     @Override
     public void setIndicators(List<InfoIndicator<?>> indicators) {
-        MineStormApiImpl.instance().getIndicatorTransmitter().setIndicators(player, indicators);
+        MineStomApiImpl.instance().getIndicatorTransmitter().setIndicators(player, indicators);
     }
 
     @Override

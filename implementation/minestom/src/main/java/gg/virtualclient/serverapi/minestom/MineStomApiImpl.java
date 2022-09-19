@@ -1,20 +1,20 @@
-package gg.virtualclient.serverapi.minestorm;
+package gg.virtualclient.serverapi.minestom;
 
 import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
-import gg.virtualclient.serverapi.minestorm.indicator.IndicatorTransmitterImpl;
+import gg.virtualclient.serverapi.minestom.indicator.IndicatorTransmitterImpl;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
 
-public class MineStormApiImpl extends VirtualServerApi {
+public class MineStomApiImpl extends VirtualServerApi {
 
     private final VirtualApiExtension extension;
     private final IndicatorTransmitter<Player> indicatorTransmitter;
 
-    public MineStormApiImpl(VirtualApiExtension extension) {
+    public MineStomApiImpl(VirtualApiExtension extension) {
         this.extension = extension;
         VirtualServerApi.instance = this;
 

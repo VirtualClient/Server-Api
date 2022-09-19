@@ -1,4 +1,4 @@
-package gg.virtualclient.serverapi.minestorm;
+package gg.virtualclient.serverapi.minestom;
 
 import gg.virtualclient.serverapi.packet.ClientPacket;
 import net.minestom.server.entity.Player;
@@ -24,7 +24,7 @@ public class VirtualApiExtension extends Extension {
     @Override
     @ApiStatus.Internal
     public void initialize() {
-        new MineStormApiImpl(this);
+        new MineStomApiImpl(this);
 
         getEventNode().addListener(PlayerPluginMessageEvent.class, event -> {
             if(event.getIdentifier().equals("virtualclient:serverapi")) {
