@@ -20,8 +20,6 @@ dependencies {
     implementation(project(":api:minestorm-api"))
 
     compileOnly("net.kyori:adventure-text-serializer-gson:4.11.0")
-    compileOnly("net.md-5:bungeecord-chat:1.16-R0.4")
-    compileOnly("io.netty:netty-all:4.1.81.Final")
 
     implementation(project(":implementation:common"))
 
