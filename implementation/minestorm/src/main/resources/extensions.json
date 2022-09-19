@@ -1,0 +1,5 @@
+{
+  "entrypoint": "gg.virtualclient.serverapi.minestorm.VirtualApiExtension",
+  "name": "VirtualServerApi",
+  "version": "1.0.0"
+}
