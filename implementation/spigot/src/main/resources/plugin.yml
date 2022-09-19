@@ -1,0 +1,7 @@
+api-version: 1.13
+main: gg.virtualclient.serverapi.spigot.VirtualApiPlugin
+version: 1.0-SNAPSHOT
+name: VirtualServerApi
+author: VirtualClient Team
+depend:
+  - ProtocolLib

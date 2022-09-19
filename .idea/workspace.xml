@@ -4,20 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Removed dependencies">
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Renamed minestom">
+      <change afterPath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/spigot-api/src/main/java/gg/virtualclient/serverapi/spigot/VirtualServerApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/spigot-api/src/main/java/gg/virtualclient/serverapi/spigot/indicators/icon/ItemIndicator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotApiImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/VirtualApiPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/indicator/IndicatorTransmitterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/transmitter/PacketTransmitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/transmitter/ProtocolLibTransmitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/spigot/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestorm-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/VirtualServerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/indicators/icon/ItemIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/indicators/icon/ItemIndicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/resources/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/resources/extensions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineStormApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineVirtualPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualApiExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/VirtualApiExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/indicator/IndicatorTransmitterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/indicator/IndicatorTransmitterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/transmitter/PacketTransmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/transmitter/PacketTransmitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/resources/extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/resources/extension.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/VirtualServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/VirtualServerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/indicators/icon/ItemIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/indicators/icon/ItemIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestom-api/src/main/resources/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/spigot-api/src/main/resources/extensions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/PacketUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/PacketUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +65,12 @@
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -101,6 +114,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Projects\VirtualClient\Server-Api\implementation\spigot" />
+      <recent name="F:\Projects\VirtualClient\Server-Api\api\spigot-api" />
       <recent name="F:\Projects\VirtualClient\Server-Api\api" />
       <recent name="F:\Projects\VirtualClient\Server-Api\common-adventure" />
       <recent name="F:\Projects\VirtualClient\Server-Api\minestorm" />
@@ -191,7 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663522811096</updated>
       <workItem from="1663522814853" duration="5408000" />
-      <workItem from="1663533511582" duration="14515000" />
+      <workItem from="1663533511582" duration="21110000" />
     </task>
     <task id="LOCAL-00001" summary="I have no idea what I'm doing">
       <created>1663592332796</created>
@@ -221,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663603300580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Renamed minestom">
+      <created>1663606693616</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663606693616</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +265,8 @@
     <MESSAGE value="Made Minestorm work" />
     <MESSAGE value="Idk" />
     <MESSAGE value="Removed dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed dependencies" />
+    <MESSAGE value="Renamed minestom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed minestom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

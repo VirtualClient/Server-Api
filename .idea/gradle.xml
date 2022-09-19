@@ -11,10 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
             <option value="$PROJECT_DIR$/api/common-api" />
-            <option value="$PROJECT_DIR$/api/minestorm-api" />
+            <option value="$PROJECT_DIR$/api/minestom-api" />
+            <option value="$PROJECT_DIR$/api/spigot-api" />
             <option value="$PROJECT_DIR$/implementation" />
             <option value="$PROJECT_DIR$/implementation/common" />
-            <option value="$PROJECT_DIR$/implementation/minestorm" />
+            <option value="$PROJECT_DIR$/implementation/minestom" />
+            <option value="$PROJECT_DIR$/implementation/spigot" />
           </set>
         </option>
       </GradleProjectSettings>

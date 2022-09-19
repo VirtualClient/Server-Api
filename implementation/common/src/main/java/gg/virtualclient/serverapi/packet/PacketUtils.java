@@ -1,6 +1,5 @@
 package gg.virtualclient.serverapi.packet;
 
-import com.google.gson.JsonObject;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 
@@ -9,11 +8,19 @@ import java.nio.charset.StandardCharsets;
 public class PacketUtils {
 
 
-    public static ByteBuf createPayloadBuffer(String identifier, JsonObject payload) {
+    public static ByteBuf createPayloadBuffer(ClientPacket packet) {
         ByteBuf buffer = Unpooled.buffer();
-        ClientPacket packet = new ClientPacket(identifier, payload);
         writeString(packet.serialize().toString(), buffer);
         return buffer;
+    }
+
+    public static byte[] packetToBytes(ClientPacket packet) {
+        ByteBuf byteBuf = createPayloadBuffer(packet);
+
+        byte[] bytes = new byte[byteBuf.readableBytes()];
+        byteBuf.readBytes(bytes);
+        byteBuf.release();
+        return bytes;
     }
 
     public static ClientPacket readPacket(ByteBuf buf) {
