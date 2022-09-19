@@ -5,7 +5,7 @@ import gg.virtualclient.serverapi.VirtualPlayer;
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.Nullable;
 
-public abstract class VirtualServerApi extends AbstractServerApi {
+public abstract class VirtualServerApi extends AbstractServerApi<Player> {
 
     @Nullable
     abstract VirtualPlayer getPlayer(Player player);

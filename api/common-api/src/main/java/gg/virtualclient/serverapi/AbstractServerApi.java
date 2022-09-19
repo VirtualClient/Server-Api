@@ -1,19 +1,21 @@
 package gg.virtualclient.serverapi;
 
-import gg.virtualclient.serverapi.indicators.InfoIndicator;
+import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
 
-public abstract class AbstractServerApi {
+public abstract class AbstractServerApi<Player> {
 
-    protected static AbstractServerApi instance;
+    protected static AbstractServerApi<?> instance;
 
     @Nullable
     public abstract VirtualPlayer getPlayer(UUID uuid);
 
+    public abstract IndicatorTransmitter<Player> getIndicatorTransmitter();
+
     @SuppressWarnings("unchecked")
-    public static <T extends AbstractServerApi> T instance() {
+    public static <P, T extends AbstractServerApi<P>> T instance() {
         return (T) instance;
     }
 

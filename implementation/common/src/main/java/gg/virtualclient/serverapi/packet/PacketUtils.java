@@ -1,11 +1,9 @@
 package gg.virtualclient.serverapi.packet;
 
 import com.google.gson.JsonObject;
-import gg.virtualclient.serverapi.packet.util.ParserHelper;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 
-import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
 public class PacketUtils {
