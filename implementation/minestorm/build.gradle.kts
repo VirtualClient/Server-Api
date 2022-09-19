@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
 group = "gg.virtualclient"
@@ -17,6 +18,10 @@ dependencies {
     compileOnly("com.github.Minestom:Minestom:18c46481f4")
     implementation(project(":api:common-api"))
     implementation(project(":api:minestorm-api"))
+
+    compileOnly("net.kyori:adventure-text-serializer-gson:4.11.0")
+    compileOnly("net.md-5:bungeecord-chat:1.16-R0.4")
+    compileOnly("io.netty:netty-all:4.1.81.Final")
 
     implementation(project(":implementation:common"))
 

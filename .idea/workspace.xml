@@ -4,33 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/VirtualPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/InfoIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/icon/ColorInfoIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/icon/InfoIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/icon/UrlInfoIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/minestorm-api/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualServerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/indicators/icon/ItemIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/minestorm-api/src/main/resources/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/common/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/indicator/DefaultIndicatorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/indicator/StringInfoIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/ClientPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/PacketUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineStormApiImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineVirtualPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualApiExtension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/resources/extensions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="I have no idea what I'm doing">
+      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/AdventureInfoIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/BungeecordInfoIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/misc/BungeecordChatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/util/ParserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/InfoIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/InfoIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/indicators/icon/ItemIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm/indicators/icon/ItemIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/indicator/DefaultIndicatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/indicator/StringInfoIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/indicators/StringInfoIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/ClientPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/ClientPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/PacketUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/packet/PacketUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestorm/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineStormApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineStormApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/MineVirtualPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualApiExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/java/gg/virtualclient/serverapi/minestorm/VirtualApiExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestorm/src/main/resources/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestorm/src/main/resources/extension.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +38,32 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -84,7 +97,11 @@
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm",
     "last_opened_file_path": "F:/Projects/VirtualClient/Server-Api/api",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -98,6 +115,78 @@
       <recent name="F:\Projects\VirtualClient\Server-Api\api" />
     </key>
   </component>
+  <component name="RunManager" selected="Gradle.Server-Api [shadowJar]">
+    <configuration name="Server-Api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Server-Api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Server-Api [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Server-Api [shadowJar]" />
+        <item itemvalue="Gradle.Server-Api [build]" />
+        <item itemvalue="Gradle.Server-Api [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,8 +196,16 @@
       <option name="presentableId" value="Default" />
       <updated>1663522811096</updated>
       <workItem from="1663522814853" duration="5408000" />
-      <workItem from="1663533511582" duration="3760000" />
+      <workItem from="1663533511582" duration="11636000" />
     </task>
+    <task id="LOCAL-00001" summary="I have no idea what I'm doing">
+      <created>1663592332796</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663592332796</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +221,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="I have no idea what I'm doing" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have no idea what I'm doing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Minestom/minestom/18c46481f4/ffd895e7ac27802a3a7fcc43788ca6ca3095a859/Minestom-18c46481f4-sources.jar!/net/minestom/server/item/Materials.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

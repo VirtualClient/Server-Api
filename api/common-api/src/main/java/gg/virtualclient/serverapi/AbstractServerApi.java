@@ -7,9 +7,7 @@ import java.util.UUID;
 
 public abstract class AbstractServerApi {
 
-    private static AbstractServerApi instance;
-
-    public abstract InfoIndicator.Factory getInfoIndicatorFactory();
+    protected static AbstractServerApi instance;
 
     @Nullable
     public abstract VirtualPlayer getPlayer(UUID uuid);

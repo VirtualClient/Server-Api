@@ -15,11 +15,7 @@ public class MineStormApiImpl extends VirtualServerApi {
 
     public MineStormApiImpl(VirtualApiExtension extension) {
         this.extension = extension;
-    }
-
-    @Override
-    public InfoIndicator.Factory getInfoIndicatorFactory() {
-        return null;
+        VirtualServerApi.instance = this;
     }
 
     @Override
