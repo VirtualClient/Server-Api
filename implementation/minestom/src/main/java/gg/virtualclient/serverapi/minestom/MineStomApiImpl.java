@@ -1,8 +1,10 @@
 package gg.virtualclient.serverapi.minestom;
 
 import gg.virtualclient.serverapi.VirtualPlayer;
+import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
-import gg.virtualclient.serverapi.minestom.indicator.IndicatorTransmitterImpl;
+import gg.virtualclient.serverapi.minestom.transmitter.MinePacketTransmitter;
+import gg.virtualclient.serverapi.spigot.VirtualServerApi;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.Nullable;
@@ -16,9 +18,10 @@ public class MineStomApiImpl extends VirtualServerApi {
 
     public MineStomApiImpl(VirtualApiExtension extension) {
         this.extension = extension;
-        VirtualServerApi.instance = this;
+        instance = this;
 
-        this.indicatorTransmitter = new IndicatorTransmitterImpl();
+        MinePacketTransmitter transmitter = new MinePacketTransmitter();
+        this.indicatorTransmitter = new IndicatorTransmitterImpl<>(transmitter);
     }
 
     @Override
@@ -32,7 +35,7 @@ public class MineStomApiImpl extends VirtualServerApi {
     }
 
     @Override
-    @Nullable VirtualPlayer getPlayer(Player player) {
+    public @Nullable VirtualPlayer getPlayer(Player player) {
         return extension.getPlayer(player);
     }
 }

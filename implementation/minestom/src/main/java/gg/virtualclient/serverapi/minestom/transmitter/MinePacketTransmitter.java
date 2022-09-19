@@ -1,15 +1,16 @@
 package gg.virtualclient.serverapi.minestom.transmitter;
 
 import gg.virtualclient.serverapi.packet.ClientPacket;
+import gg.virtualclient.serverapi.packet.PacketTransmitter;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import net.minestom.server.utils.binary.BinaryWriter;
 
 import java.io.IOException;
 
-public class PacketTransmitter {
+public class MinePacketTransmitter implements PacketTransmitter<Player> {
 
-    public static void sendPacket(Player player, ClientPacket clientPacket) {
+    public void sendPacket(Player player, ClientPacket clientPacket) {
         try(BinaryWriter binaryWriter = new BinaryWriter()) {
             binaryWriter.writeSizedString(clientPacket.serialize().toString());
 
@@ -19,7 +20,7 @@ public class PacketTransmitter {
         }
     }
 
-    public static void broadcastPacket(ClientPacket clientPacket) {
+    public void broadcastPacket(ClientPacket clientPacket) {
         try(BinaryWriter binaryWriter = new BinaryWriter()) {
             binaryWriter.writeSizedString(clientPacket.serialize().toString());
             byte[] bytes = binaryWriter.toByteArray();

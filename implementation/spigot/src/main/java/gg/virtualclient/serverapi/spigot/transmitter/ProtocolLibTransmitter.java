@@ -6,13 +6,15 @@ import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.utility.MinecraftReflection;
 import com.comphenix.protocol.wrappers.MinecraftKey;
 import gg.virtualclient.serverapi.packet.ClientPacket;
+import gg.virtualclient.serverapi.packet.PacketTransmitter;
 import gg.virtualclient.serverapi.packet.PacketUtils;
 import io.netty.buffer.ByteBuf;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class ProtocolLibTransmitter implements PacketTransmitter {
+public class ProtocolLibTransmitter implements PacketTransmitter<Player> {
     @Override
     public void sendPacket(Player player, ClientPacket clientPacket) {
         ByteBuf buffer = PacketUtils.createPayloadBuffer(clientPacket);
@@ -31,6 +33,13 @@ public class ProtocolLibTransmitter implements PacketTransmitter {
             ProtocolLibrary.getProtocolManager().sendServerPacket(player, packetContainer);
         } catch (InvocationTargetException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void broadcastPacket(ClientPacket clientPacket) {
+        for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+            sendPacket(onlinePlayer, clientPacket);
         }
     }
 }

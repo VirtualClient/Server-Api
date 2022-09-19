@@ -1,16 +1,12 @@
 package gg.virtualclient.serverapi.spigot;
 
-import gg.virtualclient.serverapi.indicators.InfoIndicator;
 import gg.virtualclient.serverapi.packet.ClientPacket;
 import gg.virtualclient.serverapi.packet.PacketUtils;
-import gg.virtualclient.serverapi.spigot.indicators.icon.ItemIndicator;
-import gg.virtualclient.serverapi.spigot.transmitter.PacketTransmitter;
+import gg.virtualclient.serverapi.packet.PacketTransmitter;
 import gg.virtualclient.serverapi.spigot.transmitter.ProtocolLibTransmitter;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -21,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class VirtualApiPlugin extends JavaPlugin implements Listener, PluginMessageListener {
@@ -31,7 +26,7 @@ public class VirtualApiPlugin extends JavaPlugin implements Listener, PluginMess
      */
     private static final Map<Player, SpigotPlayer> virtualPlayers = new HashMap<>();
 
-    private PacketTransmitter packetTransmitter;
+    private PacketTransmitter<Player> packetTransmitter;
 
     @Override
     public void onEnable() {
@@ -75,7 +70,7 @@ public class VirtualApiPlugin extends JavaPlugin implements Listener, PluginMess
         }
     }
 
-    public PacketTransmitter getPacketTransmitter() {
+    public PacketTransmitter<Player> getPacketTransmitter() {
         return packetTransmitter;
     }
 

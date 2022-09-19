@@ -2,7 +2,7 @@ package gg.virtualclient.serverapi.spigot;
 
 import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
-import gg.virtualclient.serverapi.spigot.indicator.IndicatorTransmitterImpl;
+import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.Nullable;
@@ -18,7 +18,7 @@ public class SpigotApiImpl extends VirtualServerApi {
         this.plugin = plugin;
         VirtualServerApi.instance = this;
 
-        this.indicatorTransmitter = new IndicatorTransmitterImpl(plugin.getPacketTransmitter());
+        this.indicatorTransmitter = new IndicatorTransmitterImpl<>(plugin.getPacketTransmitter());
     }
 
     @Override
@@ -32,7 +32,7 @@ public class SpigotApiImpl extends VirtualServerApi {
     }
 
     @Override
-    @Nullable VirtualPlayer getPlayer(Player player) {
+    public @Nullable VirtualPlayer getPlayer(Player player) {
         return plugin.getPlayer(player);
     }
 }

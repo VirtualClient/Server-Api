@@ -1,20 +1,19 @@
-package gg.virtualclient.serverapi.spigot.indicator;
+package gg.virtualclient.serverapi.indicator;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.indicators.InfoIndicator;
-import gg.virtualclient.serverapi.spigot.transmitter.PacketTransmitter;
+import gg.virtualclient.serverapi.packet.PacketTransmitter;
 import gg.virtualclient.serverapi.packet.ClientPacket;
-import org.bukkit.entity.Player;
 
 import java.util.List;
 
-public class IndicatorTransmitterImpl implements IndicatorTransmitter<Player> {
+public class IndicatorTransmitterImpl<Player> implements IndicatorTransmitter<Player> {
 
-    private final PacketTransmitter transmitter;
+    private final PacketTransmitter<Player> transmitter;
 
-    public IndicatorTransmitterImpl(PacketTransmitter transmitter) {
+    public IndicatorTransmitterImpl(PacketTransmitter<Player> transmitter) {
         this.transmitter = transmitter;
     }
 

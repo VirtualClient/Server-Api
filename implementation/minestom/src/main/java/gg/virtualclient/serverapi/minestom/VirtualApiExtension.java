@@ -22,7 +22,6 @@ public class VirtualApiExtension extends Extension {
 
 
     @Override
-    @ApiStatus.Internal
     public void initialize() {
         new MineStomApiImpl(this);
 

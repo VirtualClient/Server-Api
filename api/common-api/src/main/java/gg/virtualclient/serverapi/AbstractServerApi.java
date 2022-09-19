@@ -12,6 +12,9 @@ public abstract class AbstractServerApi<Player> {
     @Nullable
     public abstract VirtualPlayer getPlayer(UUID uuid);
 
+    @Nullable
+    public abstract VirtualPlayer getPlayer(Player player);
+
     public abstract IndicatorTransmitter<Player> getIndicatorTransmitter();
 
     @SuppressWarnings("unchecked")
