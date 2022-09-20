@@ -26,12 +26,12 @@ configurations.implementation.get().extendsFrom(project.configurations.shadow.ge
 
 dependencies {
     // To change the versions see the gradle.properties file
-    minecraft("com.mojang:minecraft:1.19.2")
-    mappings("net.fabricmc:yarn:1.19.2+build.8:v2")
+    minecraft("com.mojang:minecraft:1.16.5")
+    mappings("net.fabricmc:yarn:1.16.5+build.8:v2")
     modImplementation("net.fabricmc:fabric-loader:0.14.9")
 
     // Fabric API. This is technically optional, but you probably want it anyway.
-    modImplementation("net.fabricmc.fabric-api:fabric-api:0.60.0+1.19.2")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.42.0+1.16")
     shadow(project(":api:common-api"))
     shadow(project(":api:fabric-api"))
 
@@ -50,10 +50,6 @@ val shadowJar by tasks.getting(ShadowJar::class) {
 tasks.getByName<RemapJarTask>("remapJar") {
     inputFile.set(shadowJar.archiveFile)
 }
-
-//tasks.withType(JavaCompile::class).configureEach {
-//    it.options.release = 8
-//}
 
 java {
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task

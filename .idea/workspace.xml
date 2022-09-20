@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Updated buildscript">
-      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/mods/ModBlockTransmitter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/mods/ModBlockTransmitterImpl.java" afterDir="false" />
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="move some things to common">
+      <change afterPath="$PROJECT_DIR$/api/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/VirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/VirtualPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricVirtualPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/VirtualApiEntrypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/VirtualApiEntrypoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/transmitter/FabricPacketTransmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/transmitter/FabricPacketTransmitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineVirtualPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +58,13 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -89,9 +81,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/1.19.2/net.fabricmc.yarn.1_19_2.1.19.2+build.8-v2/minecraft-project-@implementation@fabric-merged-named.jar!/net/minecraft/text/Text.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

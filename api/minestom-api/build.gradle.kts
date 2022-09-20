@@ -19,6 +19,12 @@ dependencies {
 
 }
 
+configure<JavaPluginExtension>{
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
