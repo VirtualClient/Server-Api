@@ -1,8 +1,9 @@
-group = "gg.virtualclient"
-version = "1.0-SNAPSHOT"
+
 
 
 subprojects {
+    group = "gg.virtualclient.server-api"
+    version = "1.0-SNAPSHOT"
     apply {
         plugin("java")
     }

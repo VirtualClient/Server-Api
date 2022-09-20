@@ -2,9 +2,6 @@ plugins {
     id("java")
 }
 
-group = "gg.virtualclient"
-version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
 }
