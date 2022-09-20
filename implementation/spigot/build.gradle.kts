@@ -24,8 +24,12 @@ dependencies {
     implementation(project(":implementation:common"))
     compileOnly("io.netty:netty-all:4.1.81.Final")
     compileOnly("com.comphenix.protocol:ProtocolLib:4.8.0");
+}
 
-
+tasks {
+    build {
+        dependsOn(shadowJar)
+    }
 }
 
 tasks.getByName<Test>("test") {

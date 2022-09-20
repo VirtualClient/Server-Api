@@ -25,6 +25,12 @@ dependencies {
 
 }
 
+tasks {
+    build {
+        dependsOn(shadowJar)
+    }
+}
+
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }

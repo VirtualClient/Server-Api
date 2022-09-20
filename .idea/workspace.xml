@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Began implementing fabric">
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Fix package name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/VirtualApiExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/VirtualApiExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/transmitter/MinePacketTransmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/transmitter/MinePacketTransmitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/resources/extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/resources/extension.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,33 +55,13 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="shadow" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="implementation" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="implementation" type="2d1252cf:ModuleNode" />
-                <item name="fabric" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="implementation" type="2d1252cf:ModuleNode" />
-                <item name="fabric" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="implementation" type="2d1252cf:ModuleNode" />
-                <item name="fabric" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="fabric" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -275,7 +252,8 @@
       <workItem from="1663522814853" duration="5408000" />
       <workItem from="1663533511582" duration="21110000" />
       <workItem from="1663659417426" duration="8852000" />
-      <workItem from="1663675887129" duration="2714000" />
+      <workItem from="1663675887129" duration="2888000" />
+      <workItem from="1663682080405" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="I have no idea what I'm doing">
       <created>1663592332796</created>
@@ -319,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663673448309</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix package name">
+      <created>1663679221351</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663679221351</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +329,8 @@
     <MESSAGE value="Removed dependencies" />
     <MESSAGE value="Renamed minestom" />
     <MESSAGE value="Began implementing fabric" />
-    <option name="LAST_COMMIT_MESSAGE" value="Began implementing fabric" />
+    <MESSAGE value="Fix package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix package name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
