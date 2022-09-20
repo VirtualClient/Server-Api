@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Renamed minestom">
-      <change afterPath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fabric-api/src/main/java/gg/virtualclient/serverapi/fabric/VirtualServerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fabric-api/src/main/java/gg/virtualclient/serverapi/fabric/icon/ItemIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fabric-api/src/main/java/gg/virtualclient/serverapi/fabric/indicators/MinecraftInfoIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricApiImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricVirtualPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/VirtualApiEntrypoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/VirtualPlayerHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/mixin/PlayerEntityMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/transmitter/FabricPacketTransmitter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/resources/fabric.mod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/fabric/src/main/resources/virtualapi.mixins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Began implementing fabric">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/VirtualServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/VirtualServerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/indicators/icon/ItemIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/src/main/java/gg/virtualclient/serverapi/minestom/indicators/icon/ItemIndicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/spigot-api/src/main/java/gg/virtualclient/serverapi/spigot/VirtualServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/spigot-api/src/main/java/gg/virtualclient/serverapi/spigot/VirtualServerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/spigot-api/src/main/resources/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/VirtualApiExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/VirtualApiExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/transmitter/MinePacketTransmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/transmitter/MinePacketTransmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/resources/extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/resources/extension.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +102,9 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/1.19.2/net.fabricmc.yarn.1_19_2.1.19.2+build.8-v2/minecraft-project-@implementation@fabric-merged-named.jar!/net/minecraft/text/Text.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -130,22 +114,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "5a0f38",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm",
-    "last_opened_file_path": "C:/Users/david/Projects/Server-Api/implementation/fabric/src/main/java",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;5a0f38&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/david/Projects/Server-Api/implementation/fabric/src/main/java&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\david\Projects\Server-Api\implementation\fabric\src\main\java" />
@@ -164,7 +148,7 @@
       <recent name="gg.virtualclient.serverapi.fabric.icon" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Server-Api [build]">
+  <component name="RunManager" selected="Gradle.Server-Api [shadowJar]">
     <configuration name="Server-Api [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -272,10 +256,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Server-Api [shadowJar]" />
         <item itemvalue="Gradle.Server-Api [build]" />
         <item itemvalue="Gradle.Server-Api [assemble]" />
         <item itemvalue="Gradle.Server-Api [clean]" />
-        <item itemvalue="Gradle.Server-Api [shadowJar]" />
         <item itemvalue="Gradle.Server-Api:implementation:fabric [runServer]" />
       </list>
     </recent_temporary>
@@ -290,7 +274,8 @@
       <updated>1663522811096</updated>
       <workItem from="1663522814853" duration="5408000" />
       <workItem from="1663533511582" duration="21110000" />
-      <workItem from="1663659417426" duration="8754000" />
+      <workItem from="1663659417426" duration="8852000" />
+      <workItem from="1663675887129" duration="2714000" />
     </task>
     <task id="LOCAL-00001" summary="I have no idea what I'm doing">
       <created>1663592332796</created>
@@ -327,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663606693616</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Began implementing fabric">
+      <created>1663673448309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663673448309</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +343,8 @@
     <MESSAGE value="Idk" />
     <MESSAGE value="Removed dependencies" />
     <MESSAGE value="Renamed minestom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed minestom" />
+    <MESSAGE value="Began implementing fabric" />
+    <option name="LAST_COMMIT_MESSAGE" value="Began implementing fabric" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
