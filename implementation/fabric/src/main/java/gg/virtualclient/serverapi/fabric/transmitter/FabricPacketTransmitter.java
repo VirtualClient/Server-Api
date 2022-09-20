@@ -18,7 +18,6 @@ public class FabricPacketTransmitter implements PacketTransmitter<ServerPlayerEn
     }
 
     public void sendPacket(ServerPlayerEntity player, ClientPacket clientPacket) {
-        System.out.println(clientPacket.getPayload());
         ServerPlayNetworking.send(player, new Identifier("virtualclient", "serverapi"),
                 new PacketByteBuf(PacketUtils.createPayloadBuffer(clientPacket)));
     }

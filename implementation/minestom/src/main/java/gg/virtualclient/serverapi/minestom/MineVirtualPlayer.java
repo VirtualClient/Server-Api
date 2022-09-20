@@ -22,6 +22,21 @@ public class MineVirtualPlayer implements VirtualPlayer {
     }
 
     @Override
+    public void clearBlockedMods() {
+        MineStomApiImpl.instance().getModBlockTransmitter().clearBlockedMods(player);
+    }
+
+    @Override
+    public void blockMods(List<String> mods) {
+        MineStomApiImpl.instance().getModBlockTransmitter().blockMods(player, mods);
+    }
+
+    @Override
+    public void unblockMods(List<String> mods) {
+        MineStomApiImpl.instance().getModBlockTransmitter().unblockMods(player, mods);
+    }
+
+    @Override
     public String getClientVersion() {
         return clientVersion;
     }

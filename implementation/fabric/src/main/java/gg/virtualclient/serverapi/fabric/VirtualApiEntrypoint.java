@@ -26,11 +26,6 @@ public class VirtualApiEntrypoint implements ModInitializer {
         if(clientPacket.getIdentifier().equals("init")) {
             ((VirtualPlayerHolder) player).setVirtualServerApiPlayer(new FabricVirtualPlayer(player,
                     clientPacket.getPayload().get("client-version").getAsString()));
-
-            //TODO: Remove
-            VirtualServerApi.instance().getIndicatorTransmitter().setIndicators(player, List.of(
-                    new MinecraftInfoIndicator(Text.literal("Hi"), List.of(new ItemIndicator(Items.ACACIA_FENCE)))
-            ));
         }
     }
 

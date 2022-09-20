@@ -21,4 +21,9 @@ public interface VirtualPlayer {
      */
     void setIndicators(List<InfoIndicator<?>> indicators);
 
+    void clearBlockedMods();
+
+    void blockMods(List<String> mods);
+
+    void unblockMods(List<String> mods);
 }

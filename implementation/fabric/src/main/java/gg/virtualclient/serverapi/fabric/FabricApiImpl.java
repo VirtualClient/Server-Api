@@ -4,6 +4,8 @@ import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.fabric.transmitter.FabricPacketTransmitter;
 import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
+import gg.virtualclient.serverapi.mods.ModBlockTransmitter;
+import gg.virtualclient.serverapi.mods.ModBlockTransmitterImpl;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -13,6 +15,7 @@ public class FabricApiImpl extends VirtualServerApi {
 
     private final VirtualApiEntrypoint mod;
     private final IndicatorTransmitter<ServerPlayerEntity> indicatorTransmitter;
+    private final ModBlockTransmitter<ServerPlayerEntity> modBlockTransmitter;
 
     public FabricApiImpl(VirtualApiEntrypoint mod) {
         this.mod = mod;
@@ -20,11 +23,17 @@ public class FabricApiImpl extends VirtualServerApi {
 
         FabricPacketTransmitter transmitter = new FabricPacketTransmitter(mod);
         this.indicatorTransmitter = new IndicatorTransmitterImpl<>(transmitter);
+        this.modBlockTransmitter = new ModBlockTransmitterImpl<>(transmitter);
     }
 
     @Override
     public IndicatorTransmitter<ServerPlayerEntity> getIndicatorTransmitter() {
         return indicatorTransmitter;
+    }
+
+    @Override
+    public ModBlockTransmitter<ServerPlayerEntity> getModBlockTransmitter() {
+        return modBlockTransmitter;
     }
 
     @Override

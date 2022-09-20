@@ -22,6 +22,21 @@ public class SpigotPlayer implements VirtualPlayer {
     }
 
     @Override
+    public void clearBlockedMods() {
+        SpigotApiImpl.instance().getModBlockTransmitter().clearBlockedMods(player);
+    }
+
+    @Override
+    public void blockMods(List<String> mods) {
+        SpigotApiImpl.instance().getModBlockTransmitter().blockMods(player, mods);
+    }
+
+    @Override
+    public void unblockMods(List<String> mods) {
+        SpigotApiImpl.instance().getModBlockTransmitter().unblockMods(player, mods);
+    }
+
+    @Override
     public String getClientVersion() {
         return clientVersion;
     }

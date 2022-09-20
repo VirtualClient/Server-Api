@@ -22,6 +22,21 @@ public class FabricVirtualPlayer implements VirtualPlayer {
     }
 
     @Override
+    public void clearBlockedMods() {
+        FabricApiImpl.instance().getModBlockTransmitter().clearBlockedMods(player);
+    }
+
+    @Override
+    public void blockMods(List<String> mods) {
+        FabricApiImpl.instance().getModBlockTransmitter().blockMods(player, mods);
+    }
+
+    @Override
+    public void unblockMods(List<String> mods) {
+        FabricApiImpl.instance().getModBlockTransmitter().unblockMods(player, mods);
+    }
+
+    @Override
     public String getClientVersion() {
         return clientVersion;
     }
