@@ -10,10 +10,10 @@ public abstract class AbstractServerApi<Player> {
     protected static AbstractServerApi<?> instance;
 
     @Nullable
-    public abstract VirtualPlayer getPlayer(UUID uuid);
+    public abstract VirtualPlayer getPlayer(Player player);
 
     @Nullable
-    public abstract VirtualPlayer getPlayer(Player player);
+    public abstract VirtualPlayer getPlayer(UUID uuid);
 
     public abstract IndicatorTransmitter<Player> getIndicatorTransmitter();
 

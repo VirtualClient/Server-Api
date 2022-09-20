@@ -4,7 +4,6 @@ import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.minestom.transmitter.MinePacketTransmitter;
-import gg.virtualclient.serverapi.spigot.VirtualServerApi;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.Nullable;

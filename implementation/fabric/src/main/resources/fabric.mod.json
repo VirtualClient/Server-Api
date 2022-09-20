@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "virtualclient-serverapi",
+  "version": "${version}",
+  "name": "VirtualClient Server API",
+  "description": "Interact with the VirtualClient on the server",
+  "authors": [
+    "VirtualClient Team"
+  ],
+  "contact": {
+    "homepage": "https://virtualclient.gg/",
+    "sources": "https://github.com/VirtualClient/Server-API"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "gg.virtualclient.serverapi.fabric.VirtualApiEntrypoint"
+    ]
+  },
+  "mixins": [
+    "virtualapi.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "java": ">=17"
+  }
+}
