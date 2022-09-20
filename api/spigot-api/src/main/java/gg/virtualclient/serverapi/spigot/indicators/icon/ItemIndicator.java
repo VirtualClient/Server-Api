@@ -4,7 +4,13 @@ import com.google.gson.JsonObject;
 import gg.virtualclient.serverapi.indicators.icon.InfoIcon;
 import org.bukkit.Material;
 
-public record ItemIndicator(Material material) implements InfoIcon {
+public class ItemIndicator implements InfoIcon {
+
+    private final Material material;
+
+    public ItemIndicator(Material material) {
+        this.material = material;
+    }
 
     @Override
     public JsonObject serialize() {
