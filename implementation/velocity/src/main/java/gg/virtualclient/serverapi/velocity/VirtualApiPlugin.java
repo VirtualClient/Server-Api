@@ -2,6 +2,7 @@ package gg.virtualclient.serverapi.velocity;
 
 import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
+import com.velocitypowered.api.event.connection.DisconnectEvent;
 import com.velocitypowered.api.event.connection.PluginMessageEvent;
 import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.Player;
@@ -55,6 +56,11 @@ public class VirtualApiPlugin extends VirtualServerApi {
 
             handleClientPacket((Player) event.getSource(), packet);
         }
+    }
+
+    @Subscribe
+    public void handle(DisconnectEvent event) {
+        virtualPlayers.remove(event.getPlayer());
     }
 
     private void handleClientPacket(Player player, ClientPacket clientPacket) {
