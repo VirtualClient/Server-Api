@@ -14,11 +14,13 @@
             <option value="$PROJECT_DIR$/api/fabric-api" />
             <option value="$PROJECT_DIR$/api/minestom-api" />
             <option value="$PROJECT_DIR$/api/spigot-api" />
+            <option value="$PROJECT_DIR$/api/velocity-api" />
             <option value="$PROJECT_DIR$/implementation" />
             <option value="$PROJECT_DIR$/implementation/common" />
             <option value="$PROJECT_DIR$/implementation/fabric" />
             <option value="$PROJECT_DIR$/implementation/minestom" />
             <option value="$PROJECT_DIR$/implementation/spigot" />
+            <option value="$PROJECT_DIR$/implementation/velocity" />
           </set>
         </option>
       </GradleProjectSettings>
