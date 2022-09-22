@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="Updated buildscript">
-      <change afterPath="$PROJECT_DIR$/api/velocity-api/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/velocity-api/src/main/java/gg/virtualclient/serverapi/velocity/VirtualServerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/velocity/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/VelocityPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/VirtualApiPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/transmitter/VelocityTransmitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="move some things to common">
+      <change afterPath="$PROJECT_DIR$/api/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,19 +58,13 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Server-Api" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -87,11 +82,6 @@
       </list>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/3.1.1-SNAPSHOT/dae1be3073fba82475292c9919891e60538a7307/velocity-api-3.1.1-SNAPSHOT-sources.jar!/com/velocitypowered/api/proxy/messages/ChannelIdentifier.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/3.1.1-SNAPSHOT/dae1be3073fba82475292c9919891e60538a7307/velocity-api-3.1.1-SNAPSHOT-sources.jar!/com/velocitypowered/api/proxy/messages/MinecraftChannelIdentifier.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/1.19.2/net.fabricmc.yarn.1_19_2.1.19.2+build.8-v2/minecraft-project-@implementation@fabric-merged-named.jar!/net/minecraft/text/Text.class" root0="SKIP_INSPECTION" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -101,29 +91,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "5a0f38",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm",
-    "last_opened_file_path": "C:/Users/david/Projects/Server-Api/implementation/velocity",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;5a0f38&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/david/Projects/Server-Api/implementation/fabric/src/main/java&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\david\Projects\Server-Api\implementation\velocity" />
-      <recent name="C:\Users\david\Projects\Server-Api\api\velocity-api" />
       <recent name="C:\Users\david\Projects\Server-Api\implementation\fabric\src\main\java" />
       <recent name="C:\Users\david\Projects\Server-Api\implementation" />
       <recent name="C:\Users\david\Projects\Server-Api\api\fabric-api" />
+      <recent name="F:\Projects\VirtualClient\Server-Api\implementation\spigot" />
+      <recent name="F:\Projects\VirtualClient\Server-Api\api\spigot-api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\david\Projects\Server-Api\implementation\fabric\src\main\resources" />
@@ -132,7 +122,6 @@
       <recent name="F:\Projects\VirtualClient\Server-Api\api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="gg.virtualclient.serverapi.velocity" />
       <recent name="gg.virtualclient.serverapi.fabric.icon" />
     </key>
   </component>
@@ -266,8 +255,6 @@
       <workItem from="1663675887129" duration="2888000" />
       <workItem from="1663682080405" duration="770000" />
       <workItem from="1663683530311" duration="1688000" />
-      <workItem from="1663758830768" duration="6000" />
-      <workItem from="1663768909335" duration="2705000" />
     </task>
     <task id="LOCAL-00001" summary="I have no idea what I'm doing">
       <created>1663592332796</created>

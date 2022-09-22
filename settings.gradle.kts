@@ -9,6 +9,7 @@ pluginManagement {
     }
 }
 
+include("api")
 include("api:common-api")
 include("api:minestom-api")
 include("api:spigot-api")

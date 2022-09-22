@@ -3,9 +3,6 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-group = "gg.virtualclient"
-version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
     maven(url = "https://jitpack.io")
@@ -16,8 +13,8 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
-    implementation(project(":api:common-api"))
-    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    api(project(":api:common-api"))
+    compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
 }
 
 tasks.getByName<Test>("test") {
