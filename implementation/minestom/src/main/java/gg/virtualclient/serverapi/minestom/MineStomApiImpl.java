@@ -1,6 +1,8 @@
 package gg.virtualclient.serverapi.minestom;
 
 import gg.virtualclient.serverapi.VirtualPlayer;
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitter;
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitterImpl;
 import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.minestom.transmitter.MinePacketTransmitter;
@@ -17,6 +19,7 @@ public class MineStomApiImpl extends VirtualServerApi {
     private final VirtualApiExtension extension;
     private final IndicatorTransmitter<Player> indicatorTransmitter;
     private final ModBlockTransmitter<Player> modBlockTransmitter;
+    private final DiscordRPCTransmitterImpl<Player> discordRPCTransmitter;
 
     public MineStomApiImpl(VirtualApiExtension extension) {
         this.extension = extension;
@@ -25,6 +28,8 @@ public class MineStomApiImpl extends VirtualServerApi {
         MinePacketTransmitter transmitter = new MinePacketTransmitter();
         this.indicatorTransmitter = new IndicatorTransmitterImpl<>(transmitter);
         this.modBlockTransmitter = new ModBlockTransmitterImpl<>(transmitter);
+        this.discordRPCTransmitter = new DiscordRPCTransmitterImpl<>(transmitter);
+
     }
 
     @Override
@@ -35,6 +40,11 @@ public class MineStomApiImpl extends VirtualServerApi {
     @Override
     public IndicatorTransmitter<Player> getIndicatorTransmitter() {
         return indicatorTransmitter;
+    }
+
+    @Override
+    public DiscordRPCTransmitter<Player> getDiscordRPCTransmitter() {
+        return discordRPCTransmitter;
     }
 
     @Override

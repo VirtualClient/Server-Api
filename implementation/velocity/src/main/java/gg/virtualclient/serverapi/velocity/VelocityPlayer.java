@@ -3,6 +3,7 @@ package gg.virtualclient.serverapi.velocity;
 import com.velocitypowered.api.proxy.Player;
 import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.indicators.InfoIndicator;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -34,6 +35,11 @@ public class VelocityPlayer implements VirtualPlayer {
     @Override
     public void unblockMods(List<String> mods) {
         VirtualApiPlugin.instance().getModBlockTransmitter().unblockMods(player, mods);
+    }
+
+    @Override
+    public void setDiscordGameMode(@Nullable String gameMode) {
+        VirtualApiPlugin.instance().getDiscordRPCTransmitter().setGameMode(player, gameMode);
     }
 
     @Override

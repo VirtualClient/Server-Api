@@ -1,6 +1,8 @@
 package gg.virtualclient.serverapi.fabric;
 
 import gg.virtualclient.serverapi.VirtualPlayer;
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitter;
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitterImpl;
 import gg.virtualclient.serverapi.fabric.transmitter.FabricPacketTransmitter;
 import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
@@ -16,6 +18,7 @@ public class FabricApiImpl extends VirtualServerApi {
     private final VirtualApiEntrypoint mod;
     private final IndicatorTransmitter<ServerPlayerEntity> indicatorTransmitter;
     private final ModBlockTransmitter<ServerPlayerEntity> modBlockTransmitter;
+    private final DiscordRPCTransmitterImpl<ServerPlayerEntity> discordRPCTransmitter;
 
     public FabricApiImpl(VirtualApiEntrypoint mod) {
         this.mod = mod;
@@ -24,11 +27,18 @@ public class FabricApiImpl extends VirtualServerApi {
         FabricPacketTransmitter transmitter = new FabricPacketTransmitter(mod);
         this.indicatorTransmitter = new IndicatorTransmitterImpl<>(transmitter);
         this.modBlockTransmitter = new ModBlockTransmitterImpl<>(transmitter);
+        this.discordRPCTransmitter = new DiscordRPCTransmitterImpl<>(transmitter);
+
     }
 
     @Override
     public IndicatorTransmitter<ServerPlayerEntity> getIndicatorTransmitter() {
         return indicatorTransmitter;
+    }
+
+    @Override
+    public DiscordRPCTransmitter<ServerPlayerEntity> getDiscordRPCTransmitter() {
+        return discordRPCTransmitter;
     }
 
     @Override

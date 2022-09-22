@@ -7,6 +7,8 @@ import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import gg.virtualclient.serverapi.VirtualPlayer;
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitter;
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitterImpl;
 import gg.virtualclient.serverapi.indicator.IndicatorTransmitterImpl;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.mods.ModBlockTransmitter;
@@ -29,6 +31,7 @@ public class VirtualApiPlugin extends VirtualServerApi {
     private static final Map<Player, VelocityPlayer> virtualPlayers = new HashMap<>();
 
     private final ProxyServer proxyServer;
+    private final DiscordRPCTransmitterImpl<Player> discordRPCTransmitter;
     private ModBlockTransmitter<Player> modBlockTransmitter;
     private IndicatorTransmitter<Player> indicatorTransmitter;
 
@@ -39,6 +42,8 @@ public class VirtualApiPlugin extends VirtualServerApi {
         VelocityTransmitter transmitter = new VelocityTransmitter(proxyServer);
         this.modBlockTransmitter = new ModBlockTransmitterImpl<>(transmitter);
         this.indicatorTransmitter = new IndicatorTransmitterImpl<>(transmitter);
+        this.discordRPCTransmitter = new DiscordRPCTransmitterImpl<>(transmitter);
+
 
         VirtualServerApi.instance = this;
     }
@@ -73,6 +78,11 @@ public class VirtualApiPlugin extends VirtualServerApi {
     @Override
     public IndicatorTransmitter<Player> getIndicatorTransmitter() {
         return indicatorTransmitter;
+    }
+
+    @Override
+    public DiscordRPCTransmitter<Player> getDiscordRPCTransmitter() {
+        return discordRPCTransmitter;
     }
 
     @Override

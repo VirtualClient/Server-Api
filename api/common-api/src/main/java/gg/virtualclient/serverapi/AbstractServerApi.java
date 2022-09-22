@@ -1,5 +1,6 @@
 package gg.virtualclient.serverapi;
 
+import gg.virtualclient.serverapi.discord.DiscordRPCTransmitter;
 import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.mods.ModBlockTransmitter;
 import org.jetbrains.annotations.Nullable;
@@ -17,6 +18,8 @@ public abstract class AbstractServerApi<Player> {
     public abstract VirtualPlayer getPlayer(UUID uuid);
 
     public abstract IndicatorTransmitter<Player> getIndicatorTransmitter();
+
+    public abstract DiscordRPCTransmitter<Player> getDiscordRPCTransmitter();
 
     public abstract ModBlockTransmitter<Player> getModBlockTransmitter();
 

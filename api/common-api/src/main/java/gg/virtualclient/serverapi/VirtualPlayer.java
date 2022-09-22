@@ -1,6 +1,7 @@
 package gg.virtualclient.serverapi;
 
 import gg.virtualclient.serverapi.indicators.InfoIndicator;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -26,4 +27,7 @@ public interface VirtualPlayer {
     void blockMods(List<String> mods);
 
     void unblockMods(List<String> mods);
+
+    void setDiscordGameMode(@Nullable String gameMode);
+
 }

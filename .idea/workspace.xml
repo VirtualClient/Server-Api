@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="move some things to common">
-      <change afterPath="$PROJECT_DIR$/api/build.gradle.kts" afterDir="false" />
+    <list default="true" id="637270dd-5501-49f3-8df9-b024e79aa91e" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/discord/DiscordRPCTransmitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implementation/common/src/main/java/gg/virtualclient/serverapi/discord/DiscordRPCTransmitterImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fabric-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/minestom-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/api/spigot-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/AbstractServerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/VirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/common-api/src/main/java/gg/virtualclient/serverapi/VirtualPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/fabric/src/main/java/gg/virtualclient/serverapi/fabric/FabricVirtualPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineStomApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineVirtualPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/minestom/src/main/java/gg/virtualclient/serverapi/minestom/MineVirtualPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/spigot/src/main/java/gg/virtualclient/serverapi/spigot/SpigotPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/VelocityPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/VelocityPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/VirtualApiPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/velocity/src/main/java/gg/virtualclient/serverapi/velocity/VirtualApiPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +60,25 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Server-Api" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Server-Api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -81,6 +95,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/3.1.1-SNAPSHOT/dae1be3073fba82475292c9919891e60538a7307/velocity-api-3.1.1-SNAPSHOT-sources.jar!/com/velocitypowered/api/proxy/messages/ChannelIdentifier.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/3.1.1-SNAPSHOT/dae1be3073fba82475292c9919891e60538a7307/velocity-api-3.1.1-SNAPSHOT-sources.jar!/com/velocitypowered/api/proxy/messages/MinecraftChannelIdentifier.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/1.19.2/net.fabricmc.yarn.1_19_2.1.19.2+build.8-v2/minecraft-project-@implementation@fabric-merged-named.jar!/net/minecraft/text/Text.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -101,7 +120,7 @@
     &quot;last_directory_selection&quot;: &quot;F:/Projects/VirtualClient/Server-Api/api/minestorm-api/src/main/java/gg/virtualclient/serverapi/minestorm&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/david/Projects/Server-Api/implementation/fabric/src/main/java&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
@@ -125,7 +144,7 @@
       <recent name="gg.virtualclient.serverapi.fabric.icon" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Server-Api [build]">
+  <component name="RunManager" selected="Gradle.Server-Api [publish]">
     <configuration name="Server-Api [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,6 +208,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Server-Api [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Server-Api [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -210,34 +250,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Server-Api:implementation:fabric [runServer]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/implementation/fabric" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="runServer" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Server-Api [publish]" />
         <item itemvalue="Gradle.Server-Api [build]" />
         <item itemvalue="Gradle.Server-Api [shadowJar]" />
         <item itemvalue="Gradle.Server-Api [assemble]" />
         <item itemvalue="Gradle.Server-Api [clean]" />
-        <item itemvalue="Gradle.Server-Api:implementation:fabric [runServer]" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +274,8 @@
       <workItem from="1663675887129" duration="2888000" />
       <workItem from="1663682080405" duration="770000" />
       <workItem from="1663683530311" duration="1688000" />
+      <workItem from="1663829740810" duration="88000" />
+      <workItem from="1663846316004" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="I have no idea what I'm doing">
       <created>1663592332796</created>
@@ -312,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663682651598</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix">
+      <created>1663828440394</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663828440394</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +367,8 @@
     <MESSAGE value="Began implementing fabric" />
     <MESSAGE value="Fix package name" />
     <MESSAGE value="Updated buildscript" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated buildscript" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

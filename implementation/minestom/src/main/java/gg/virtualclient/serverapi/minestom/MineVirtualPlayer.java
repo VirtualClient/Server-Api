@@ -3,6 +3,7 @@ package gg.virtualclient.serverapi.minestom;
 import gg.virtualclient.serverapi.VirtualPlayer;
 import gg.virtualclient.serverapi.indicators.InfoIndicator;
 import net.minestom.server.entity.Player;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -34,6 +35,11 @@ public class MineVirtualPlayer implements VirtualPlayer {
     @Override
     public void unblockMods(List<String> mods) {
         MineStomApiImpl.instance().getModBlockTransmitter().unblockMods(player, mods);
+    }
+
+    @Override
+    public void setDiscordGameMode(@Nullable String gameMode) {
+        MineStomApiImpl.instance().getDiscordRPCTransmitter().setGameMode(player, gameMode);
     }
 
     @Override
