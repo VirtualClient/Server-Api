@@ -15,7 +15,6 @@ import gg.virtualclient.serverapi.indicators.IndicatorTransmitter;
 import gg.virtualclient.serverapi.mods.ModBlockTransmitter;
 import gg.virtualclient.serverapi.mods.ModBlockTransmitterImpl;
 import gg.virtualclient.serverapi.packet.ClientPacket;
-import gg.virtualclient.serverapi.packet.PacketTransmitter;
 import gg.virtualclient.serverapi.packet.PacketUtils;
 import gg.virtualclient.serverapi.velocity.transmitter.VelocityTransmitter;
 import io.netty.buffer.Unpooled;
@@ -33,8 +32,8 @@ public class VirtualApiPlugin extends VirtualServerApi {
 
     private final ProxyServer proxyServer;
     private final DiscordRPCTransmitterImpl<Player> discordRPCTransmitter;
-    private ModBlockTransmitter<Player> modBlockTransmitter;
-    private IndicatorTransmitter<Player> indicatorTransmitter;
+    private final ModBlockTransmitter<Player> modBlockTransmitter;
+    private final IndicatorTransmitter<Player> indicatorTransmitter;
 
     @Inject
     public VirtualApiPlugin(ProxyServer proxyServer) {
@@ -44,6 +43,7 @@ public class VirtualApiPlugin extends VirtualServerApi {
         this.modBlockTransmitter = new ModBlockTransmitterImpl<>(transmitter);
         this.indicatorTransmitter = new IndicatorTransmitterImpl<>(transmitter);
         this.discordRPCTransmitter = new DiscordRPCTransmitterImpl<>(transmitter);
+        proxyServer.getChannelRegistrar().register(VelocityTransmitter.CHANNEL);
 
 
         VirtualServerApi.instance = this;
